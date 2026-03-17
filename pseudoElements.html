@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        body{
+            background-color: pink;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        .welcome-Heading{
+            transition: 0.4s ease;
+        }
+
+        .welcome-Heading::before{
+            content: "😊 ";
+        }
+
+        .welcome-Heading::after{
+            content: " 🎉";
+        }
+
+        .welcome-Heading:hover{
+            color: deepskyblue;
+            background-color: blueviolet;
+        }
+
+        h3{
+            margin-top: 20px;
+        }
+
+        h3::first-letter{
+            font-size: 50px;
+            color: darkred;
+            font-weight: bold;
+        }
+
+        h3::selection{
+            background-color: purple;
+            color: yellow;
+        }
+
+        p::first-line{
+            font-size: 20px;
+            color: cornflowerblue;
+            font-weight: bold;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Anchor pseudo-classes (Correct Order: LVHA) */
+        .anchor:link{
+            color: chocolate;
+        }
+
+        .anchor:visited{
+            color: darkgreen;
+        }
+
+        .anchor:hover{
+            color: crimson;
+        }
+
+        .anchor:active{
+            color: aqua;
+        }
+
+        /* Second Anchor Pseudo Example */
+        .anchor-pseudo:link{
+            color: black;
+            text-decoration: none;
+            text-transform: lowercase;            
+        }
+
+        .anchor-pseudo:visited{
+            color: crimson;
+        }
+
+        .anchor-pseudo:hover{
+            color: darkorchid;
+        }
+
+        .anchor-pseudo:active{
+            color: darkblue;
+        }
+
+        .discount{
+            color: gainsboro;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="welcome-Heading">
+        Welcome to the Amazon Big Billion Days Festival
+    </h1>
+
+    <h3>Offers</h3>
+
+    <p>
+        On every item 
+        <span class="discount">
+            flat 30% Discount
+        </span>
+    </p>
+
+    <!-- First Anchor -->
+    <h4>
+        <a href="https://www.amazon.in" target="_blank" rel="noopener" class="anchor">
+            Visit Amazon Now
+        </a>
+    </h4>
+
+    <!-- Second Anchor using anchor-pseudo -->
+    <h4>
+        <a href="https://www.flipkart.com" target="_blank" rel="noopener" class="anchor-pseudo">
+            Visit Flipkart Now
+        </a>
+    </h4>
+
+    <button>Join Now</button>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quos minima ratione provident quibusdam, hic corporis.
+    </p>
+
+</body>
+</html>

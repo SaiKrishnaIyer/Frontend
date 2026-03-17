@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1549088521-94b6502fec3d?q=80&w=1332&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        /* Home Section */
+        #home{
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .main-heading{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .bold{
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        input{
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button{
+            background-color: crimson;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color: darkred;
+        }
+
+        /* Details Section as Horizontal Grid */
+        #details{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: rgba(0,0,0,0.8);
+        }
+
+        .tv-details,
+        .downloads-details,
+        .poppers-details,
+        .msg-details{
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .tv-details{
+            background-color: lightcoral;
+        }
+
+        .downloads-details{
+            background-color: blueviolet;
+        }
+
+        .poppers-details{
+            background-color: steelblue;
+        }
+
+        .msg-details{
+            background-color: slateblue;
+        }
+
+        .tv-details:hover,
+        .downloads-details:hover,
+        .poppers-details:hover,
+        .msg-details:hover{
+            transform: scale(1.05);
+        }
+
+        #details p{
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        /* Extra paragraphs styling */
+        .extra-text{
+            padding: 20px 40px;
+            background: rgba(0,0,0,0.7);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section id="home">
+        <h1 class="main-heading">Unlimited movies, shows, and more</h1>
+        <h4 class="bold">Starts at ₹149. Cancel at any time.</h4>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <input type="email" placeholder="Email address">
+        <button>Get Started</button>
+    </section>
+
+    <section id="details">
+        <div class="tv-details">
+            <h3>Enjoy on your TV</h3>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            <span>📺</span>
+        </div>
+
+        <div class="downloads-details">
+            <h3>Download your shows</h3>
+            <p>Save your favourites easily and always have something to watch.</p>
+            <span>📩</span>
+        </div>
+
+        <div class="poppers-details">
+            <h3>Watch everywhere</h3>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            <span>👓</span>
+        </div>
+
+        <div class="msg-details">
+            <h3>Create profiles for kids</h3>
+            <p>Send kids on adventures with their favourite characters in a space made just for them.</p>
+            <span>👶</span>
+        </div>
+    </section>
+
+    <section class="extra-text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, ullam reprehenderit! Eligendi omnis, sunt atque in labore molestias velit repellendus earum rerum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iusto ea, placeat non maxime eveniet architecto in fugiat harum.</p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        body{
+            background-color:darkblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        .box{
+            background-color: brown;
+            height: 200px;
+            width: 200px;
+            border-radius: 8px;
+            transition-property: background-color, transform;
+            transition-delay: 0.1s;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        .box:hover{
+            background-color: lightseagreen;
+            transform: scale(0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
